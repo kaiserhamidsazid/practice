@@ -97,3 +97,37 @@ hr{
     background-color: rgba(243, 54, 54, 0.733);
     border-radius: 7px;
 }
+
+@media only screen and (max-width:688px) {
+    .container{
+        width:100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1,1fr);
+
+    }    
+    .blogs{
+        display:block;
+    }
+    .player{
+        flex-direction: column;
+    }
+   
+    
+}
+@media only screen and (max-width:988px) {
+    .container{
+        width:100%;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .players, .blogs, .courses{
+        flex-direction: column;
+    }
+    
+}
